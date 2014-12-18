@@ -8,12 +8,17 @@ The easiest way to work with sublevels through multilevel.
   up to date in the `manifest.json`.
 
 # USAGE
+The same method can be used to install level-key on 
+the server, the method will be written to the `manifest.json`.
+
 ```js
 var multilevel = require('multilevel');
 var net = require('net');
+var levelkey = require('level-key');
 
-var db = multilevel.client();
+var db = levelkey(multilevel.client());
 var con = net.connect(3000);
+
 con.pipe(db.createRpcStream()).pipe(con);
 
 var k = db.key('reports', 'yearly', 'today');

@@ -7,6 +7,13 @@
     "test": "node test.js"
   },
   "author": "hij1nx",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hij1nx/level-key.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hij1nx/level-key/issues"
+  },
+  "homepage": "https://github.com/hij1nx/level-key"
 }
-
