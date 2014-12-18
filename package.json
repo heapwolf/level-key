@@ -1,0 +1,12 @@
+{
+  "name": "level-key",
+  "version": "1.0.0",
+  "description": "The easiest way to work with sublevels through multilevel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "hij1nx",
+  "license": "MIT"
+}
+
