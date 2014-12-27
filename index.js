@@ -17,7 +17,7 @@ module.exports = function(db) {
       throw new Error('Not enough arguments');
     }
    
-    if (args.length == 1) return '!' + arguments[0];
+    if (args.length == 1) return '!' + arguments[0] + '!';
     
     var key = args.pop();
     return '!' + args.join('#') + '!' + key;
