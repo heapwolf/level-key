@@ -14,14 +14,14 @@ the server, the method will be written to the `manifest.json`.
 ```js
 var multilevel = require('multilevel');
 var net = require('net');
-var levelkey = require('level-key');
+var key = require('level-key');
 
-var db = levelkey(multilevel.client());
+var db = multilevel.client();
 var con = net.connect(3000);
 
 con.pipe(db.createRpcStream()).pipe(con);
 
-var k = db.key('reports', 'yearly', 'today');
+var k = key('reports', 'yearly', 'today');
 var val = {};
 
 client.put(k, val, function(err) {
